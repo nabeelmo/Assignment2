@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #007bff;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  input[type="number"], input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .radio-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .radio-label {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .radio-label:hover {
+    background: #e0e0e0;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .btn {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #218838;
+  }
+  
