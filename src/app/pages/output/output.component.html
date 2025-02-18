@@ -1,0 +1,9 @@
+<div class="container">
+    <h2>Bill Summary</h2>
+    <p><strong>Cost of Service:</strong> {{ tipService.cost | currency }}</p>
+    <p><strong>Tip Percentage:</strong> {{ tipService.quality * 100 }}%</p>
+    <p><strong>Tip Amount:</strong> {{ tipService.tipAmount | currency }}</p>
+    <p><strong>Total Bill:</strong> {{ tipService.totalBill | currency }}</p>
+    <button (click)="goBack()">Go Back to Home Page</button>
+  </div>
+  

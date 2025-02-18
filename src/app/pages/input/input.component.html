@@ -1,0 +1,35 @@
+<div class="container">
+    <h2>Tip Calculator</h2>
+  
+    <form #tipForm="ngForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>💰 Cost of Service:</label>
+        <input type="number" class="form-control" name="cost" [(ngModel)]="cost" required min="1" placeholder="Enter amount">
+        <div *ngIf="tipForm.submitted && !cost" class="error">⚠ Cost is required.</div>
+      </div>
+  
+      <div class="form-group">
+        <label>⭐ Service Quality:</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="quality" [(ngModel)]="quality" [value]="0.15" required> Okay (15%)
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="quality" [(ngModel)]="quality" [value]="0.18"> Good (18%)
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="quality" [(ngModel)]="quality" [value]="0.20"> Excellent (20%)
+          </label>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label class="checkbox-label">
+          <input type="checkbox" [(ngModel)]="roundUp" name="roundUp"> Round Up Tip ⏫
+        </label>
+      </div>
+
+      <button type="submit" class="btn">💡 Calculate Tip</button>
+    </form>
+  </div>
+  
